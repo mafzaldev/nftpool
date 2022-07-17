@@ -1,0 +1,25 @@
+@import "../sass-utils/variables";
+
+body {
+  font-family: "Inter", sans-serif;
+  color: $tertiary-color;
+}
+
+.nav-links {
+  font-size: 16px;
+  font-weight: 500;
+
+  a {
+    color: $paragraph-color;
+    text-decoration: none;
+  }
+}
+
+.cra-button {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  color: $tertiary-color;
+}
