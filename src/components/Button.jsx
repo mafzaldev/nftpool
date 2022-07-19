@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Button({ text }) {
+export default function Button({ text, styleClass }) {
     return (
-        <a href="#/" className="cra-button">
+        <a href="#/" className={styleClass}>
             {text}
         </a>
     )

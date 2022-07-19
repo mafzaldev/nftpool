@@ -1,0 +1,13 @@
+@import "../sass-utils/_variables.scss";
+
+.partners {
+  padding: 40px 100px;
+  .partners-row {
+    background-color: $counter-bg;
+    padding: 20px;
+    img {
+      margin-left: 100px;
+      height: 35px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "../sass-utils/variables";
+
+.hero {
+  display: flex;
+  padding: 40px 100px;
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: flex-start;
+    gap: 35px;
+    width: 50%;
+
+    .cra {
+      margin-top: 20px;
+    }
+
+    .counter {
+      display: flex;
+      background-color: $counter-bg;
+      height: 100px;
+      width: 300px;
+      margin-top: 35px;
+      .counter-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+        margin: 20px 0;
+      }
+      .counter-item:not(:first-child) {
+        border-left: 0.5px solid $divider-color;
+      }
+    }
+  }
+
+  .main-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+    img {
+      position: absolute;
+      width: 500px;
+      height: 750px;
+    }
+  }
+}

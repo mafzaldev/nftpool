@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from "../images/Logo.svg"
+import Logo from "../images/nftpool-logo.svg"
 import Nav from "../images/nav.svg"
 import Button from './Button'
 export default function Navbar() {
@@ -18,7 +18,7 @@ export default function Navbar() {
 
             </span>
             <div className="register">
-                <Button text={"Register"} />
+                <Button text={"Register"} styleClass={"register-button button"} />
             </div>
         </nav>
     )

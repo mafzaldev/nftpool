@@ -36,6 +36,8 @@ $breakpoints: (
   }
 }
 
+//Section: Navbar
+
 nav {
   .nav-links,
   .register {
@@ -60,5 +62,11 @@ nav {
 
   @include md {
     padding: 40px 50px;
+  }
+}
+
+.hero {
+  @include sm {
+    flex-direction: column;
   }
 }

@@ -1,5 +1,7 @@
 @import "../sass-utils/variables";
 
+// Section: Navbar
+
 body {
   font-family: "Inter", sans-serif;
   color: $tertiary-color;
@@ -15,11 +17,72 @@ body {
   }
 }
 
-.cra-button {
+.button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   text-decoration: none;
   color: $tertiary-color;
+}
+
+// Section: Hero
+
+.hero {
+  .main-content {
+    h1 {
+      font-family: "Clash Display";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 82px;
+      line-height: 80px;
+    }
+    p {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: $paragraph-color;
+    }
+
+    .counter {
+      .counter-item {
+        color: $paragraph-color;
+        .value {
+          font-family: "Clash Display";
+          font-size: 20px;
+          font-weight: 600;
+          text-align: left;
+          color: $tertiary-color;
+        }
+      }
+    }
+  }
+}
+
+// Section: Steps
+
+.steps {
+  h2 {
+    font-family: Clash Display;
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .steps-row {
+    .step {
+      h3 {
+        font-family: Clash Display;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: left;
+      }
+      p {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+      }
+    }
+  }
 }

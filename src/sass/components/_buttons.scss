@@ -1,8 +1,9 @@
-@import "../sass-utils/variables";
+@import "../sass-utils/mixins";
+
+.register-button {
+  @include button(20px, 50px);
+}
 
 .cra-button {
-  padding: 20px 60px;
-  background-color: $secondary-color;
-  border: none;
-  margin-left: 20px;
+  @include button(20px, 50px);
 }
