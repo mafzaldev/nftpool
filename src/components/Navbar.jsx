@@ -1,6 +1,6 @@
 import React from 'react'
-import Logo from "../images/nftpool-logo.svg"
-import Nav from "../images/nav.svg"
+import Logo from "../images/SVGs/nftpool-logo.svg"
+import Nav from "../images/SVGs/nav.svg"
 import Button from './Button'
 export default function Navbar() {
     return (
@@ -15,7 +15,6 @@ export default function Navbar() {
             </div>
             <span className="ham-burger">
                 <img src={Nav} alt="" />
-
             </span>
             <div className="register">
                 <Button text={"Register"} styleClass={"register-button button"} />

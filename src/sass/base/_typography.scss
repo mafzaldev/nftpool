@@ -86,3 +86,51 @@ body {
     }
   }
 }
+
+//Section: Drops
+
+.header {
+  .heading {
+    h3 {
+      font-family: Clash Display;
+      font-size: 48px;
+      font-weight: 600;
+      text-align: left;
+    }
+  }
+}
+
+//section: Card
+.card {
+  .deadline {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    .deadline-time {
+      font-family: "Clash Display";
+      font-weight: 600;
+      font-size: 16px;
+      color: $bold-color;
+    }
+  }
+}
+
+//Section: Collection
+
+.name-coll {
+  .name {
+    font-family: "Clash Display";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: $tertiary-color;
+  }
+  .amount {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: $bold-color;
+  }
+}

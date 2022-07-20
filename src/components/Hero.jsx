@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-import Main from "../images/main.svg"
+import Main from "../images/SVGs/main.svg"
 export default function Hero() {
     return (
         <section className="hero">

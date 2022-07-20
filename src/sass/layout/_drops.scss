@@ -1,0 +1,19 @@
+.drops {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 100px;
+  .header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .heading {
+      display: flex;
+    }
+  }
+  .drops-row {
+    display: flex;
+    justify-content: space-around;
+  }
+}

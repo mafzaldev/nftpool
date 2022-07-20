@@ -1,0 +1,95 @@
+.card {
+  position: relative;
+  width: 420px;
+  height: 672px;
+
+  .deadline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    left: 180px;
+    top: 25px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(25.2px);
+    .deadline-time {
+      margin-left: 5px;
+    }
+  }
+  .artists {
+    z-index: 1;
+    position: absolute;
+    left: 10%;
+    right: 50.6%;
+    top: 70.63%;
+    bottom: 21.87%;
+
+    img {
+      margin-left: -20px;
+    }
+  }
+  .blurred {
+    position: absolute;
+    top: 502px;
+    height: 170px;
+    width: 420px;
+    backdrop-filter: blur(25.2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .nft-details {
+      display: flex;
+      justify-content: space-around;
+
+      .introd {
+        .nft-name {
+          font-family: "Clash Display";
+          font-weight: 600;
+          font-size: 20px;
+          text-align: left;
+        }
+        .underlined {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          text-decoration: underline;
+          text-align: left;
+          margin-top: 5px;
+        }
+      }
+      .price {
+        .crypto {
+          font-family: "Clash Display";
+          font-weight: 600;
+          font-size: 28.56px;
+          color: #0fdfe5;
+          text-align: right;
+        }
+        .dollars {
+          font-family: "Inter";
+          font-weight: 500;
+          font-size: 16px;
+          text-align: right;
+        }
+      }
+    }
+
+    .card-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 5px;
+      .bid {
+        margin-top: 20px;
+        margin-left: -10px;
+      }
+      .artwork {
+        margin-top: 20px;
+        margin-right: -10px;
+      }
+    }
+  }
+}

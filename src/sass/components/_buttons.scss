@@ -1,9 +1,22 @@
 @import "../sass-utils/mixins";
+@import "../sass-utils/variables";
 
 .register-button {
-  @include button(20px, 50px);
+  @include button(20px, 50px, $secondary-color);
 }
 
 .cra-button {
-  @include button(20px, 50px);
+  @include button(20px, 50px, $secondary-color);
+}
+
+.bid-button {
+  @include button(15px, 20px, $counter-bg);
+}
+
+.artwork-button {
+  @include button(13px, 18px, $counter-bg, true);
+}
+
+.viewall-button {
+  @include button(20px, 50px, $secondary-color);
 }

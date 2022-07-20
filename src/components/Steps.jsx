@@ -1,8 +1,8 @@
 import React from 'react'
 import SingleStep from './SingleStep.jsx'
-import Arrow from "../images/Arrow.svg"
-import Bag from "../images/Bag.svg"
-import Wallet from "../images/Wallet.svg"
+import Arrow from "../images/SVGs/Arrow.svg"
+import Bag from "../images/SVGs/Bag.svg"
+import Wallet from "../images/SVGs/Wallet.svg"
 
 export default function Steps() {
     return (

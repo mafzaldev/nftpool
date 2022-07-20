@@ -1,0 +1,13 @@
+@import "../sass-utils/variables";
+
+.collection {
+  height: 101px;
+  width: 308px;
+  margin-left: 20px;
+  border-bottom: 1px solid $paragraph-color;
+  .details {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+  }
+}

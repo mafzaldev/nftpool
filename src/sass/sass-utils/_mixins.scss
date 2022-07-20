@@ -1,7 +1,11 @@
 @import "../sass-utils/variables";
 
-@mixin button($tb, $rf) {
+@mixin button($tb, $rf, $color, $outlined: false) {
   padding: $tb $rf;
-  background-color: $secondary-color;
-  border: none;
+  @if $outlined {
+    border: 3px solid $color;
+  } @else {
+    background-color: $color;
+    border: none;
+  }
 }
