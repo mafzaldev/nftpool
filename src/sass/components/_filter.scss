@@ -1,0 +1,11 @@
+@import "../sass-utils/variables";
+@import "../sass-utils/mixins";
+
+.filter {
+  @include filter;
+}
+
+.filter-selected {
+  @include filter;
+  background-color: $blurred-bg;
+}

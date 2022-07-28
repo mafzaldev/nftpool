@@ -1,8 +1,9 @@
+@import "../sass-utils/variables";
+
 .card {
   position: relative;
-  width: 420px;
+  width: 370px;
   height: 672px;
-
   .deadline {
     display: flex;
     align-items: center;
@@ -10,14 +11,20 @@
     position: absolute;
     height: 50px;
     width: 200px;
-    left: 180px;
-    top: 25px;
-    background: rgba(255, 255, 255, 0.3);
+    left: 40%;
+    top: 5%;
+    background: $blurred-bg;
     backdrop-filter: blur(25.2px);
     .deadline-time {
       margin-left: 5px;
     }
   }
+  .favourate-icon {
+    position: absolute;
+    left: 83.33%;
+    top: 4.46%;
+  }
+
   .artists {
     z-index: 1;
     position: absolute;
@@ -34,7 +41,7 @@
     position: absolute;
     top: 502px;
     height: 170px;
-    width: 420px;
+    width: 370px;
     backdrop-filter: blur(25.2px);
     display: flex;
     flex-direction: column;
@@ -43,7 +50,6 @@
     .nft-details {
       display: flex;
       justify-content: space-around;
-
       .introd {
         .nft-name {
           font-family: "Clash Display";
@@ -65,7 +71,7 @@
         .crypto {
           font-family: "Clash Display";
           font-weight: 600;
-          font-size: 28.56px;
+          font-size: 28px;
           color: #0fdfe5;
           text-align: right;
         }

@@ -13,6 +13,10 @@ body {
   width: 100%;
 }
 
+::placeholder {
+  color: $paragraph-color;
+}
+
 // .App {
 //   display: flex;
 //   align-items: center;

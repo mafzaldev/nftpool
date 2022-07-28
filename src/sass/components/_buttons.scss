@@ -20,3 +20,7 @@
 .viewall-button {
   @include button(20px, 50px, $secondary-color);
 }
+
+.subscribe-button {
+  @include button(16px, 40px, $secondary-color);
+}

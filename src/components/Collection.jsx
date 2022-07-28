@@ -1,16 +1,17 @@
-import React from 'react'
-import Image from "../images/Collections/Collection-01.png";
-export default function Collection() {
-    return (
-        <div className="collection">
-            <div className="details">
-                <span>1.</span>
-                <span><img src={Image} alt="" /></span>
-                <div className="name-coll">
-                    <p className="name">BoredApeYacht</p>
-                    <p className="amount">$21,017,447</p>
-                </div>
-            </div>
+import React from "react";
+export default function Collection({ sr, Image, collection_name, amount }) {
+  return (
+    <div className="collection">
+      <div className="details">
+        <span className="serial-no">{sr}&nbsp;.</span>
+        <span>
+          <img src={Image} alt="" />
+        </span>
+        <div className="name-coll">
+          <p className="name">{collection_name}</p>
+          <p className="amount">{amount}</p>
         </div>
-    )
+      </div>
+    </div>
+  );
 }

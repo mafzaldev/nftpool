@@ -34,7 +34,7 @@ body {
       font-family: "Clash Display";
       font-style: normal;
       font-weight: 600;
-      font-size: 82px;
+      font-size: 81px;
       line-height: 80px;
     }
     p {
@@ -117,20 +117,53 @@ body {
 
 //Section: Collection
 
-.name-coll {
-  .name {
+.collection {
+  .serial-no {
     font-family: "Clash Display";
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 28px;
-    color: $tertiary-color;
-  }
-  .amount {
-    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    color: $bold-color;
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .name-coll {
+    .name {
+      font-family: "Clash Display";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28px;
+      color: $tertiary-color;
+    }
+    .amount {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+      color: $bold-color;
+    }
+  }
+}
+
+//Section: Filter
+.filter {
+  color: #c9bfd8;
+}
+
+//Section: Subscribe
+.subscribe {
+  .content {
+    h3 {
+      font-family: Clash Display;
+      font-size: 48px;
+      font-weight: 600;
+      text-align: left;
+    }
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+    }
   }
 }

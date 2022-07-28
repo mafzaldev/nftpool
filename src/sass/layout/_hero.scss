@@ -18,8 +18,8 @@
     .counter {
       display: flex;
       background-color: $counter-bg;
+      width: 400px;
       height: 100px;
-      width: 300px;
       margin-top: 35px;
       .counter-item {
         display: flex;

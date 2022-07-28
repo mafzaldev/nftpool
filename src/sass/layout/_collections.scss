@@ -1,4 +1,32 @@
 .collections {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 40px 100px;
+
+  .header {
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .heading {
+      display: flex;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+  .collections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-flow: column;
+    column-gap: 20px;
+    row-gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .viewall-sm {
+    display: none;
+  }
 }
