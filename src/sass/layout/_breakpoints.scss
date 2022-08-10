@@ -1,9 +1,11 @@
+@import "../sass-utils/variables";
 $breakpoints: (
-  "xs": 0,
-  "sm": 496px,
-  "md": 768px,
+  "sm": 480px,
   "lg": 982px,
-  "xl": 1280px,
+  "xl": 1366px,
+  "xxl": 1440px,
+  "xxxl": 1920px,
+  "xxxxl": 2560px,
 );
 
 @mixin xs {
@@ -31,42 +33,420 @@ $breakpoints: (
 }
 
 @mixin xl {
-  @media (max-width: map-get($breakpoints,"xl")) {
+  @media (min-width: map-get($breakpoints,"xl")) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: map-get($breakpoints,"xxl")) {
+    @content;
+  }
+}
+
+@mixin xxxl {
+  @media (min-width: map-get($breakpoints,"xxxl")) {
     @content;
   }
 }
 
 //Section: Navbar
 
+// nav {
+//   .nav-links {
+//     a {
+//       @include lg {
+//         padding-left: 30px;
+//       }
+//     }
+//   }
+
+//   .ham-burger {
+//     @include md {
+//       display: block;
+//     }
+//   }
+// }
+
+// .hero {
+//   @include sm {
+//     flex-direction: column;
+//   }
+// }
+
+// .subscribe {
+//   @include xxl {
+//     left: 12% !important;
+//   }
+// }
+
+/*
+Mobile-Responsive
+*/
+
+body {
+  @include sm {
+    h2 {
+      font-size: 34px !important;
+      text-align: center !important;
+    }
+
+    h3 {
+      font-size: 30px !important;
+      text-align: center !important;
+    }
+
+    .section-footer {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+    font-size: 12px !important;
+  }
+}
+
 nav {
   .nav-links,
   .register {
-    @include md {
+    @include sm {
+      display: none !important;
+    }
+  }
+
+  #check {
+    z-index: 3;
+    display: none;
+  }
+
+  .ham-burger .close {
+    @include sm {
       display: none;
     }
   }
 
-  .nav-links {
-    a {
-      @include lg {
-        padding-left: 30px;
-      }
+  #check:checked ~ .nav-links {
+    @include sm {
+      z-index: 3 !important;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100vh;
+      background: $primary-color;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+  }
+
+  #check:checked ~ .nav-links a {
+    @include sm {
+      padding-left: 0px !important;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      letter-spacing: 5px;
+    }
+  }
+
+  #check:checked ~ .register {
+    @include sm {
+      z-index: 3 !important;
+      position: fixed;
+      top: 530px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+  }
+
+  #check:checked ~ .ham-burger .close {
+    @include sm {
+      z-index: 3;
+      display: inline !important;
+      position: fixed;
+      top: 44px;
+      right: 20px;
+    }
+  }
+
+  #check:checked ~ .ham-burger .ham {
+    @include sm {
+      display: none !important;
     }
   }
 
   .ham-burger {
-    @include md {
-      display: block;
+    @include sm {
+      display: block !important;
+      cursor: pointer;
     }
   }
 
-  @include md {
-    padding: 40px 50px;
+  @include sm {
+    padding: 40px 18px !important;
+    justify-content: space-between !important;
+    align-content: stretch !important;
   }
 }
 
 .hero {
+  .main-content {
+    h1 {
+      @include sm {
+        font-size: 40px !important;
+        line-height: 40px !important;
+      }
+    }
+    p {
+      @include sm {
+        font-size: 12px !important;
+      }
+    }
+    @include sm {
+      width: 100% !important;
+    }
+  }
+
+  .counter {
+    .counter-item {
+      @include sm {
+        margin: 20px;
+      }
+      .value {
+        font-size: 10px;
+        text-align: left;
+      }
+    }
+    @include sm {
+      height: 50% !important;
+      width: 100% !important;
+    }
+  }
+
+  .main-image {
+    img {
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
   @include sm {
+    padding: 40px 18px !important;
+    flex-direction: column !important;
+  }
+}
+
+.steps {
+  .steps-row {
+    @include sm {
+      flex-direction: column !important;
+      justify-content: center;
+      gap: 25px;
+    }
+    .step {
+      @include sm {
+        margin: 0 !important;
+        width: 355px !important;
+      }
+    }
+  }
+  @include sm {
+    padding: 40px 18px !important;
+  }
+}
+
+.drops {
+  .drops-row {
+    @include sm {
+      flex-direction: column !important;
+    }
+  }
+  .header {
+    .viewall {
+      @include sm {
+        display: none !important;
+      }
+    }
+    @include sm {
+      justify-content: center !important;
+    }
+  }
+  .drops-row {
+    .card {
+      @include sm {
+        width: 100% !important;
+        .blurred {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  @include sm {
+    padding: 40px 18px !important;
+  }
+}
+
+.card {
+  @include sm {
+    background-size: contain !important;
+  }
+}
+
+.collections {
+  .header {
+    .viewall {
+      @include sm {
+        display: none !important;
+      }
+    }
+    span {
+      display: none !important;
+    }
+    @include sm {
+      justify-content: center !important;
+    }
+  }
+  .collections-grid {
+    @include sm {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+  }
+  @include sm {
+    padding: 40px 18px !important;
+  }
+}
+
+.partners {
+  .partners-row {
+    @include sm {
+      flex-direction: column !important;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    img {
+      @include sm {
+        margin: 25px 70px !important;
+        height: 35px;
+      }
+    }
+  }
+  @include sm {
+    padding: 40px 18px !important;
+  }
+}
+
+.explore {
+  .filters {
+    @include sm {
+      flex-direction: column !important;
+      width: 100% !important;
+      gap: 10px;
+      margin: 30px 0;
+    }
+    .filter,
+    .filter-selected {
+      @include sm {
+        width: 100% !important;
+      }
+    }
+  }
+  .nfts-grid {
+    .card {
+      @include sm {
+        width: 100% !important;
+        .blurred {
+          width: 100% !important;
+        }
+      }
+    }
+    @include sm {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @include sm {
+    padding: 40px 18px !important;
+  }
+}
+
+.subscribe {
+  .diamond {
+    @include sm {
+      display: block !important;
+      width: 350px !important;
+      margin: 0 auto !important;
+      left: 25px !important;
+      top: 510px !important;
+    }
+  }
+  .background {
+    @include sm {
+      height: 750px !important;
+      width: 91% !important;
+      background-size: cover !important;
+    }
+    .content {
+      @include sm {
+        width: 95% !important;
+        top: 5% !important;
+        left: 5% !important;
+      }
+      .heading {
+        span {
+          width: 5px !important;
+        }
+      }
+      p {
+        @include sm {
+          width: 90% !important;
+        }
+      }
+      form {
+        @include sm {
+        }
+
+        input {
+          @include sm {
+            width: 50% !important;
+          }
+        }
+      }
+    }
+  }
+  @include sm {
+    padding: 10px 18px !important;
+    height: 750px !important;
+  }
+}
+
+footer {
+  p {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  @include sm {
+    margin: 150px 18px 0px !important;
+    padding: 40px 18px !important;
+    flex-direction: column !important;
+    gap: 30px !important;
   }
 }

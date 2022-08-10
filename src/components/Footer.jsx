@@ -12,26 +12,37 @@ export default function Footer() {
         <img src={FooterLogo} alt="" />
       </div>
       <div className="footer-content">
-        <p>Copyright © 2022 NFTPOOL. All rights reserved</p>
+        <p>
+          Copyright © 2022 NFTPOOL. <br />
+          <span>All rights reserved</span>
+        </p>
       </div>
       <div className="footer-socials">
         <span>
-          <a href="#/">
+          <a
+            href="https://www.instagram.com/mafzaldev/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={Insta} alt="" />
           </a>
         </span>
         <span>
-          <a href="#/">
+          <a href="#/" target="_blank" rel="noreferrer">
             <img src={Discord} alt="" />
           </a>
         </span>
         <span>
-          <a href="#/">
+          <a href="#/" target="_blank" rel="noreferrer">
             <img src={Telegram} alt="" />
           </a>
         </span>
         <span>
-          <a href="#/">
+          <a
+            href="https://twitter.com/mafzaldev"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={Twitter} alt="" />
           </a>
         </span>

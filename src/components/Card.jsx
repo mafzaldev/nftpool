@@ -34,7 +34,8 @@ export default function Card({
         )
       ) : (
         <div className="deadline">
-          Ending In: <span className="deadline-time">{deadline}</span>
+          <span>Ending In: </span>
+          <span className="deadline-time">{deadline}</span>
         </div>
       )}
 

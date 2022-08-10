@@ -7,10 +7,9 @@
   .diamond {
     position: absolute;
     z-index: 1;
-    width: 540px;
-    height: 378px;
-    left: 700px;
-    top: 36px;
+    width: 400px;
+    left: 800px;
+    top: 15px;
   }
   .background {
     position: absolute;
@@ -20,7 +19,7 @@
     .content {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      gap: 20px;
       position: absolute;
       left: 5%;
       top: 15%;

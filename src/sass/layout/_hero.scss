@@ -17,6 +17,7 @@
 
     .counter {
       display: flex;
+      justify-content: center;
       background-color: $counter-bg;
       width: 400px;
       height: 100px;
@@ -43,8 +44,8 @@
 
     img {
       position: absolute;
-      width: 500px;
-      height: 750px;
+      top: 145px;
+      width: 300px;
     }
   }
 }

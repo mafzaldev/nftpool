@@ -23,7 +23,7 @@ export default function Explore() {
           <span>
             <img src={Icon} alt="" />
           </span>
-          <h3>Explore NFTs collection</h3>
+          <h2>Explore NFTs collection</h2>
           <span>
             <img src={Icon} alt="" />
           </span>

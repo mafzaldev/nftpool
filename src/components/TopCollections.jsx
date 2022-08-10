@@ -20,9 +20,9 @@ export default function TopCollections() {
     <section className="collections">
       <div className="header">
         <div className="heading">
-          <h3>
+          <h2>
             Top collections over <br /> last 7 days
-          </h3>
+          </h2>
           <span>
             <img src={Icon} alt="" />
           </span>
@@ -105,7 +105,7 @@ export default function TopCollections() {
           amount={"$1,826,339"}
         />
       </div>
-      <div className="viewall-sm">
+      <div className="section-footer">
         <Button text={"View All"} styleClass={"viewall-button button"} />
       </div>
     </section>

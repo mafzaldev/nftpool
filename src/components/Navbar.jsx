@@ -1,10 +1,12 @@
 import React from "react";
 import Logo from "../assets/SVGs/nftpool-logo.svg";
 import Nav from "../assets/SVGs/nav.svg";
+import Close from "../assets/SVGs/close.svg";
 import Button from "./Button";
 export default function Navbar() {
   return (
     <nav>
+      <input type="checkbox" id="check" />
       <div className="logo">
         <img src={Logo} alt="" />
       </div>
@@ -13,9 +15,10 @@ export default function Navbar() {
         <a href="#/">Artists</a>
         <a href="#/">Commmunity</a>
       </div>
-      <span className="ham-burger">
-        <img src={Nav} alt="" />
-      </span>
+      <label className="ham-burger" htmlFor="check">
+        <img src={Nav} alt="" className="ham" />
+        <img src={Close} alt="" className="close" />
+      </label>
       <div className="register">
         <Button text={"Register"} styleClass={"register-button button"} />
       </div>

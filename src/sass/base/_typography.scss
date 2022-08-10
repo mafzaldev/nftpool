@@ -12,7 +12,7 @@ body {
   font-weight: 500;
 
   a {
-    color: $paragraph-color;
+    color: $tertiary-color;
     text-decoration: none;
   }
 }
@@ -91,7 +91,7 @@ body {
 
 .header {
   .heading {
-    h3 {
+    h2 {
       font-family: Clash Display;
       font-size: 48px;
       font-weight: 600;
@@ -164,6 +164,17 @@ body {
       font-weight: 400;
       font-size: 16px;
       line-height: 28px;
+    }
+  }
+}
+
+footer {
+  .footer-content {
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
     }
   }
 }

@@ -16,7 +16,7 @@ export default function Drops() {
     <section className="drops">
       <div className="header">
         <div className="heading">
-          <h3>Latest Drops</h3>
+          <h2>Latest Drops</h2>
           <span>
             <img src={Icon} alt="" />
           </span>
@@ -53,6 +53,9 @@ export default function Drops() {
           deadline={"01 : 22 : 40"}
           artists={[Elipse01, Elipse02, Elipse03]}
         />
+      </div>
+      <div className="section-footer">
+        <Button text={"View All"} styleClass={"viewall-button button"} />
       </div>
     </section>
   );
