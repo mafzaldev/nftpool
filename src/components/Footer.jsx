@@ -4,7 +4,6 @@ import Insta from "../assets/SVGs/Group 9.svg";
 import Discord from "../assets/SVGs/Group 10.svg";
 import Telegram from "../assets/SVGs/Group 11.svg";
 import Twitter from "../assets/SVGs/Group 12.svg";
-
 export default function Footer() {
   return (
     <footer>
@@ -19,11 +18,7 @@ export default function Footer() {
       </div>
       <div className="footer-socials">
         <span>
-          <a
-            href="https://www.instagram.com/mafzaldev/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="#/" target="_blank" rel="noreferrer">
             <img src={Insta} alt="" />
           </a>
         </span>
@@ -38,11 +33,7 @@ export default function Footer() {
           </a>
         </span>
         <span>
-          <a
-            href="https://twitter.com/mafzaldev"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="#/" target="_blank" rel="noreferrer">
             <img src={Twitter} alt="" />
           </a>
         </span>
